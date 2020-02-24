@@ -19,7 +19,9 @@ export class CartComponent implements OnInit {
       this.cart = cart.map(data => {
         return{
         id: data.payload.doc.id,
-        ... data.payload.doc.data()
+        name: data.payload.doc.data()['name'],
+        price: data.payload.doc.data()['price'],
+        amount: data.payload.doc.data()['amount']
       };
 
       });

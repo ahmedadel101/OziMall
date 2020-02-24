@@ -120,7 +120,6 @@
           }
         }
       }
-      
     }
   },
   "defaultProject": "my-app",
@@ -128,6 +127,8 @@
     "@schematics/angular:component": {
       "style": "scss"
     }
+  },
+  "cli": {
+    "analytics": "8ef1036c-11df-4103-9b43-506144b69f1a"
   }
-  
 }

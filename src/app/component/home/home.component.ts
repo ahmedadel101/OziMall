@@ -27,7 +27,9 @@ export class HomeComponent implements OnInit, OnDestroy {
       this.goods = data.map(element => {
         return {
           id: element.payload.doc.id,
-          ...element.payload.doc.data()
+          name: element.payload.doc.data()['name'],
+          photoUrl: element.payload.doc.data()['photoUrl'],
+          price: element.payload.doc.data()['price'],
         };
       });
     });
