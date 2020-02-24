@@ -1,0 +1,29 @@
+<div class="container-x container p-2">
+<table class="table w-75 m-auto">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Amount</th>
+            <th>Total</th>
+            <th>Option</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of cart; index as i">
+            <td scope="row">{{item.name | titlecase}}</td>
+            <td>{{item.price | currency}}</td>
+            <td class="amount-td"> 
+                <input type="number" 
+                class="form-control" [(ngModel)]="item.amount">    
+            </td>
+            <td>{{(item.price * item.amount) | currency}}</td>
+            <td>
+                <button class="btn btn-primary mr-2" (click)="updateCart(i)">Save</button>
+                <button class="btn btn-danger" (click)="deleteCart(i)">Delete</button>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+</div>

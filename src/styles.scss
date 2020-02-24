@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+@import './stylings/variables';
+// Import the requere fonts
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900|Raleway:400,500,600,700,900&display=swap');
+
+html {
+    font-size: 14px
+}
+
+body {
+    
+    letter-spacing: 0.8px;
+    color: #333;
+    font-family: Poppins, Raleway !important;
+    font-weight: $font-400;
+}
+
+/* fix the position when router animation */
+.router-container {
+    position: relative;
+}
+.router-container > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+// Reset Container
+.container-x {
+    max-width: 92.28571rem !important;
+    padding: 0 3.5rem !important;
+
+}
+
+// All media queries
+
+@media (min-width: 576px) { 
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+ }
