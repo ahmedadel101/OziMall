@@ -24,7 +24,7 @@ import { CartComponent } from './component/cart/cart.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { SignupComponent } from './component/signup/signup.component';
 import { NotfoundComponent } from './component/notfound/notfound.component';
-import { HeaderComponent } from './header/header.component';
+import { HeaderComponent } from './component/header/header.component';
 
 
 

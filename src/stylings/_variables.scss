@@ -1,3 +1,23 @@
+
+// Function for converting a px based font-size to rem.
+@function calculateRem($size) {
+    $remSize: $size / 14px;
+  //Default font size on html element is 100%, equivalent to 14px;
+    @return #{$remSize}rem;
+  }
+  
+//   // Mixin 
+//   @mixin fontSize($size) {
+//     font-size: $size;
+//     font-size: calculateRem($size);
+//   }
+
+
+
+
+
+
+
 // background colors variable
 $main-bg: #f02640; // background
 $second-bg: #efefef; // background
@@ -8,6 +28,7 @@ $transparent-bg: transparent;
 //Colores
 $main-color: #333;
 $news-color: #838383;
+$input-color: #666;
 $white-color: #ffffff;
 
 // borders colors
@@ -21,10 +42,11 @@ $large-b: 3px;
 $xlarge-b: 4px;
 
 //Font sizes
-$font-12: 0.8571 rem; // 12px
-$font-14: 1 rem; // Default // 14px
-$font-15: 1.071428 rem; // 15px
-$font-16: 1.142857 rem; // 16
+$font-12: calculateRem(12px); // ~ 0.85714rem 
+$font-14: calculateRem(14px); // 1rem  Default
+$font-15: calculateRem(15px); // 15px
+$font-16: calculateRem(16px); // 16
+$font-24: calculateRem(24px); // 24px 1.715rem
 
 // Fonts weight
 $font-400: 400; // Default font weight
@@ -34,21 +56,32 @@ $font-700: 700;
 $font-800: 800; 
 $font-900: 900;
 
-// Line height
-$line1: 1.5; // Default line height
-$line2: 1.6; 
-$line3: 1.7; 
-$line4: 1.8;  
-$line5: 1.9;  
 
 // Margins & Padding
-$space5: 0.3571 rem; // 5px
-$space10: 0.714 rem; // 10px
-$space15: 1.0714 rem; // 15px
-$space20: 1.43 rem; // 20px
-$space25: 1.7857 rem;  // 25px
-$space30: 2.143 rem; // 30px
+$space5: calculateRem(5px);   // 5px
+$space6: calculateRem(6px);   // 6px
+$space7: calculateRem(7px);   // 7px
+$space8: calculateRem(8px);   // 8px
+$space9: calculateRem(9px);   // 9px
+$space10: calculateRem(10px); // 10px
+$space12: calculateRem(12px); // ~ 0.85714rem
+$space14: calculateRem(14px); // 1rem  Default
+$space15: calculateRem(15px); // 15px
+$space16: calculateRem(16px); // 16px
+$space18: calculateRem(18px); // 18px
+$space20: calculateRem(20px); // 20px
+$space24: calculateRem(24px); // 24px
+$space25: calculateRem(25px); // 25px
+$space30: calculateRem(30px); // 30px
+$space35: calculateRem(35px); // 35
+$space40: calculateRem(40px); // 40px
+
+/// Txt transform
+$upper: uppercase;
+$lower: lowercase;
+$capital: capitalize;
 
 
-
+// raduis
+$reduis30: 30px;
 

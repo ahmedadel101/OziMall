@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  isopen = false;
+  dropright = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  // Toggle navbar
+  toggleNavbar() {
+    this.isopen = !this.isopen;
+  }
+
+  toggleDropRight(){
+    this.dropright = !this.dropright;
+  }
 }
